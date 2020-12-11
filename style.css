@@ -1,0 +1,257 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url("img/bg.jpg");
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    opacity: 0.8;
+}
+
+#logo{
+    margin: -20px 10px
+    
+
+}
+#logo img{
+    margin: 30px 30px;
+    height: 80px;
+    filter: invert(100%);
+}
+#navbar ul{
+    display: flex;
+    
+}
+
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}  
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 0px 15px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    
+}
+/* Home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 490px;
+    padding: 0px 0px;
+}
+#home::before{
+    content: "";
+    /* background: url(../img/gg.jpg) no-repeat center center/cover; */
+    position: absolute;
+    height: 55%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+/* Services section */
+
+
+#services{
+    display: flex;
+    margin: 20px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+#services h1{
+    /* background: url(/img/gg.jpg); */
+    display: flex;
+    /* margin: 0px; */
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+#services::before{
+    content: "";
+    /* background: url(../img/gg.jpg) no-repeat center center/cover; */
+    position: absolute;
+    height: 118%;
+    width: 100%;
+    top: -55px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.89;
+}
+#services .box{
+    border: 2px solid rgb(121, 82, 82);
+    margin: 10px 10px;
+    padding: 5px;
+    border-radius: 23px;
+    background-color: #252323;
+}
+#services .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+    border-radius: 23px;
+    padding: 10px;
+	
+	
+}
+
+/* Client Section */
+
+#client-section{
+    /* height: 400px; */
+    position: relative;
+    /* padding: 5px; */
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(../img/70.jpg);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+
+}
+.client-item{
+    padding: 34px;
+}
+#clients img{
+    border-radius: 30px;
+    height: 120px;
+}
+
+/* contact section */
+#contact{
+    position: relative;
+
+}
+
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/16.jpg) no-repeat center center/cover;
+    /* background-color: yellow; */
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#contact-box{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-bottom: 23px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.2rem;
+    border-radius: 13px;
+    font-size: 1.1rem;
+    
+}
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.2rem;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 10px 0px;
+}
+
+/* utility classes */
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    width: 539px;
+}
+.h-primary{
+    font-size: 3rem;
+    padding: 2px;
+    margin: 0px;
+    color: black
+}
+
+.h-secondary{
+    font-size: 1.5rem;
+    padding: 15px;
+}
+
+.btn{
+    padding: 5px 10px;
+    margin: 10px;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    border: 2px solid white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.btncontactuspage{
+    padding: 5px 5px;
+    margin: 10px;
+    color: white;
+    background-color: #252323;
+    border-radius: 30px;
+    border: 1px solid white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.center{
+    text-align: center;
+}
